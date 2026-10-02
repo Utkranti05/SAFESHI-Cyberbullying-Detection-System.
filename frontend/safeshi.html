@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SAFESHI — AI Cyberbullying Detection</title>
+
+    <link rel="stylesheet" href="safeshi.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            SAFESHI<span></span><br>
+           <h6>Shield against detecting harmful messages</h6>
+            
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#detect">Detect</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#detect" class="nav-button">
+            Check a Message
+        </a>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="tag">
+                🛡️ AI-Powered Safety
+            </div>
+
+            <h1>
+                Your Messages Matter,<br>
+                Know What They Mean.
+                <span>Let Safeshi Detect the intent🫰🏻</span>
+            
+            </h1>
+
+            <p>
+                SAFESHI uses Artificial Intelligence to identify
+                harmful and cyberbullying content before it causes harm.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#detect" class="primary-button">
+                    Check a Message →
+                </a>
+
+                <a href="#about" class="secondary-button">
+                    Learn More
+                </a>
+            </div>
+
+            <div class="trust-text">
+                ✨ AI-powered &nbsp; • &nbsp; 🔒 Privacy-focused &nbsp; • &nbsp; 💜 Built for safer communication
+            </div>
+
+        </div>
+
+
+        <!-- HERO ILLUSTRATION -->
+        <div class="hero-visual">
+
+            <div class="blob"></div>
+
+            
+
+            <div class="illustration">
+                <div class="shield">
+                    <div class="hero-image">
+                    <img
+                    src="girl_illustration.png"
+                    alt="Girl using laptop for safer online communication">
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+            
+
+        
+
+    </section>
+
+
+    <!-- DETECTION SECTION -->
+    <section class="detect-section" id="detect">
+
+        <div class="section-heading">
+
+            <div class="tag">
+                🔍 Smart Detection
+            </div>
+
+            <h2>
+                Check a message
+            </h2>
+
+            <p>
+                Enter a message below and let SAFESHI analyze
+                it using AI.
+            </p>
+
+        </div>
+
+
+        <div class="detector-card">
+
+            <div class="input-header">
+                <div>
+                    <h3>Message Analysis</h3>
+                    <p>Paste or type the message you want to check.</p>
+                </div>
+
+                <span class="secure-badge">
+                    🔒 Private
+                </span>
+            </div>
+
+
+            <textarea
+                id="messageInput"
+                placeholder="Type your message here..."
+                maxlength="1000"
+            ></textarea>
+
+
+            <div class="input-footer">
+
+                <span id="characterCount">
+                    0 / 1000
+                </span>
+
+                <button id="detectButton">
+                    Analyze Message →
+                </button>
+
+            </div>
+
+
+            <!-- RESULT -->
+            <div id="resultCard" class="result-card hidden">
+
+                <div class="result-icon" id="resultIcon">
+                    ✓
+                </div>
+
+                <div class="result-content">
+
+                    <span class="result-label">
+                        Detection Result
+                    </span>
+
+                    <h3 id="resultCategory">
+                        Non-Bullying
+                    </h3>
+
+                    <p id="resultConfidence">
+                        Confidence: 0%
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features" id="about">
+
+        <div class="section-heading">
+
+            <div class="tag">
+                💜 Why SAFESHI?
+            </div>
+
+            <h2>
+                Technology with a purpose.
+            </h2>
+
+            <p>
+                SAFESHI combines AI and Natural Language Processing
+                to help create safer digital communication.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+
+                <h3>AI-Powered</h3>
+
+                <p>
+                    Machine learning analyzes messages and
+                    identifies harmful communication patterns.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+
+                <h3>Multiple Categories</h3>
+
+                <p>
+                    Detects threats, harassment, insults,
+                    hate, misogyny and other harmful content.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">💜</div>
+
+                <h3>Safer Communication</h3>
+
+                <p>
+                    Helping users recognize harmful messages
+                    and encouraging a more respectful digital space.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            SAFESHI<span>.</span>
+        </div>
+
+        <p>
+            AI-powered cyberbullying detection for safer digital spaces.
+        </p>
+        <p>⚠️ AI can make mistakes. Results are a guide, not a final judgement. Messages are not stored.</p>
+
+        <div class="footer-bottom">
+            ©SAFESHI💜
+        </div>
+
+    </footer>
+
+
+    <script src="safeshi.js"></script>
+
+</body>
+</html>
