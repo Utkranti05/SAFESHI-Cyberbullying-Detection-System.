@@ -1,12 +1,14 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib
+from pathlib import Path
 
 app = Flask(__name__)
 CORS(app)
 
 # Load trained model
-saved_model = joblib.load("model/cyberbullying_model_v3.pkl")
+MODEL_PATH = Path(__file__).resolve().parent.parent / "model" / "cyberbullying_model_v3.pkl"
+saved_model = joblib.load(MODEL_PATH)
 
 features = saved_model["features"]
 model = saved_model["model"]
